@@ -5,6 +5,7 @@ import './index.css'
 import App from './Components/App.jsx'
 import Home from './Components/Home'
 import Error from './Components/Error'
+import Page1 from './Components/page1'
 
 const router = new createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = new createBrowserRouter([
   {
     path : '/app',
     element : <App />,
+    errorElement : <Error/>
+  },{
+    path : '/page1',
+    element : <Page1 />,
     errorElement : <Error/>
   }
 ])
