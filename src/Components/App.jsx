@@ -17,7 +17,7 @@ const App = () => {
       <div><h2>APP</h2></div>
       <h1>{refCount.current}</h1>
       <button onClick={update}>add</button>
-      <button onClick={()=>{setCount(refCount.target)}}>show the result</button>
+      <button onClick={()=>{setCount(refCount.current)}}>show the result</button>
       <Page1/>
     </> 
   )
